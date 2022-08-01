@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        var a = Number(window.prompt("Insira o valor 'a': "))
+        var b = Number(window.prompt("Insira o valor 'b': "))
+        var c = Number(window.prompt("Insira o valor 'c': "))
+        // Valores
+
+        var delta = b ** 2 - (4 * a * c) 
+        var rdelta = (delta ** 0.5) 
+        // Calculo raiz de delta
+
+        if (delta < 0) {
+            alert(`A equação proposta não tem solução, pois a raiz de delta seria negativa, sendo o delta: ${delta}.`)
+
+        } else {
+        // Caso a raiz de delta seja negativa, o programa para aqui, caso não, ele continua
+
+        var x1 = (-b + rdelta) / ( 2 * a)
+        var x2 = (-b - rdelta) / ( 2 * a)
+        // Aqui é calculado os resultados da equação
+
+        alert(`Os resultados da equação de segundo grau proposta são ${x1} e ${x2}.`)
+        // Print
+        }
+
+    </script>
+</body>
+</html>

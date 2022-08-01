@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <h1>Verificador de Naturalidade</h1> 
+    <p>Vamos verificar sua naturalidade!</p>
+    País de origem: <input type="text" name="po" id="po">
+    País atual: <input type="text" name= "pa" id="pa">
+    <input type="button" value="Você é" onclick = determinar()>
+    <div id="res">
+
+    </div>
+    <script>
+    var res = document.querySelector("div#res")
+    var p_A = document.querySelector("input#pa")
+    var p_O = document.querySelector("input#po")
+        function determinar() { 
+        var paisAtual = String(p_A.value)
+        var paisOrigem = String(p_O.value)
+        
+            if(paisAtual == paisOrigem) {
+                res.innerHTML += "Você é natural de seu país atual"
+            } else {
+                res.innerHTML += "Você é estrangeiro em seu país atual"
+            }
+         }
+
+    </script>
+<body>
+   
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var aluno = window.prompt("Nome do aluno: ")
+        var mat = Number(window.prompt("Matricula: "))
+        var nota1 = Number(window.prompt("Insira a nota 1: "))
+        var nota2 = Number(window.prompt("Insira a nota 2: "))
+        var nota3 = Number(window.prompt("Insira a nota 3: "))
+        // Variaveis
+        
+        var avg = (2 * nota1 + 3 * nota2 + 5 * nota3) / (2 + 3 + 5)
+        // Calculo da média
+        
+        alert(`O aluno ${aluno}, com a matricula ${mat}, teve sua media ponderada em ${avg} pontos.`)
+        // Print
+    </script>
+</body>
+</html>
